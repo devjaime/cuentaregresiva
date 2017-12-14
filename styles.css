@@ -1,0 +1,136 @@
+body {
+	background-color: rgb(64,64,64);
+}
+
+h1 {
+	color: yellow;
+	font-size: 72px;
+}
+
+h2 {
+	color: rgb(225, 225, 225);
+	margin: 10px 0 0 60px;
+}
+
+.flipboard {
+	display: inline-block;
+	margin: 5px 5px 40px 60px;
+	font-family: 'Helvetics Neue', sans-serif;
+	background-color: white;
+	border-style: solid;
+	border-color: rgb(205, 205, 205);
+	border-width: 1px 0 1px 0;
+	border-radius: 4px;
+	top: 2px;
+	width: 92px;
+	height: 125px;
+	padding-top: 1px;
+}
+
+.layer {
+	background-color: white;
+	border-style: solid;
+	border-color: rgb(205, 205, 205);
+	border-width: 0 0 1px 0;
+	border-radius: 4px;
+	top: 2px;
+	width: 92px;
+	height: 123px;
+}
+
+.caption {
+	font-family: 'Arial', sans-serif;
+	color: grey;
+	font-size: 15px;
+	top: 105%;
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-left: 8px;
+}
+
+.flip-wrapper {
+	position: relative;
+	height: 120px;
+	width: 76px;
+}
+
+.flip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-style: solid;
+	border-color: rgb(215, 215, 215);
+	border-width: 1px 0 1px 0;
+	height: 100%;
+	width: 100%;
+	padding: 0 8px;
+	color: #FAFAFA;
+	border-radius: 6px;
+	background: -webkit-linear-gradient(
+		rgb(230, 230, 230), 
+		rgb(240, 240, 240));
+	font-weight: bold;
+	font-size: 50px;
+	color: black;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	/*box-shadow: 0 2px 1px rgba(215, 215, 215, 0.4);*/
+}
+
+.flip-top, .flip-bottom {
+	overflow: hidden;
+}
+
+@-webkit-keyframes flip {
+	to {
+		-webkit-transform: rotateX(180deg);
+	}
+}
+
+@-webkit-keyframes flip-back {
+	to {
+		-webkit-transform: rotateX(0deg);
+	}
+}
+
+.flip-top {
+	line-height: 0.4;
+	height: 50%;
+	border-radius: 6px 6px 0 0;
+	z-index: 2;
+	-webkit-backface-visibility: hidden;
+}
+
+.flip-next {
+	line-height: 0.4;
+}
+
+.flip-back {
+	line-height: 0;
+	-webkit-transform: rotateX(180deg);
+	margin-top: 60px;
+	border-radius: 0 0 6px 6px;
+}
+
+.flip-bottom {
+	height: 50%;
+	margin-top: 60px;
+	border-radius: 0 0 6px 6px;
+	border-width: 0;
+	border-top: none;
+	line-height: 0;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
